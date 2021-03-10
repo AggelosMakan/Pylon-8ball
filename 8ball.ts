@@ -2,8 +2,9 @@ const karmaKv = new pylon.KVNamespace('8ball');
 
 discord.on('MESSAGE_CREATE', async (message) => {
   if (
-    message.content.toLowerCase().startsWith('#8ball') ||
-    message.content.toLowerCase().startsWith('#eightball')
+    message.content.toLowerCase().startsWith('#8ball') /* ||    // change your prefix here
+    // if you want to use the second prefix uncomment these 
+    message.content.toLowerCase().startsWith('#eightball') */  // change your second prefix here
   ) {
     const eightballResponses = [
       '🎱| Yes',
